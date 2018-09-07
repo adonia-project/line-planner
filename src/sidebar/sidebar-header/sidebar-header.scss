@@ -1,0 +1,15 @@
+@import "../../variables";
+
+header {
+    border-bottom: 1px solid $grey;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    .traditional {
+        color: inherit;
+    }
+}
