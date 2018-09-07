@@ -1,0 +1,39 @@
+{
+  "name": "line-planner",
+  "version": "1.0.0",
+  "description": "Plans (linear) train lines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:watch": "./node_modules/.bin/webpack-cli --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonia-project/line-planner.git"
+  },
+  "author": "Adonia Project",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adonia-project/line-planner/issues"
+  },
+  "homepage": "https://github.com/adonia-project/line-planner#readme",
+  "dependencies": {
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
