@@ -1,0 +1,25 @@
+@import "../../../variables";
+
+.line-map-item-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $grey;
+    width: 100%;
+
+    &.thick {
+        height: 100px;
+    }
+
+    &.selected,
+    &:hover {
+        background-color: $light-grey;
+    }
+}
+
+.line-map-item-wrapper-content {
+    flex: 1;
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}

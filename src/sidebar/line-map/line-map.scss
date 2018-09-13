@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.line-decoration {
+    background-color: $blue;
+    width: 3px;
+    position: fixed;
+    z-index: 1;
+    top: 200px;
+    left: 21px;
+}

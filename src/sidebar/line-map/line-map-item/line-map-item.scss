@@ -1,0 +1,22 @@
+@import "../../../variables";
+
+.line-map-item {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.line-map-item-distance-marker {
+    color: $text-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+.station-item-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}

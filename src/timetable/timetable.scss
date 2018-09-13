@@ -1,0 +1,64 @@
+@import "../variables";
+
+.timetable-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .timetable {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+
+        .cell, .col {
+            border: 1px solid $light-grey;
+        }
+
+        .cell {
+            text-align: center;
+            height: 42px;
+            width: 100%;
+
+            input {
+                width: 100%;
+                height: 100%;
+                border: 0px;
+                text-align: inherit;
+                font-size: inherit;
+                padding: 10px;
+                color: inherit;
+                background-color: transparent;
+            }
+
+            &.invalid {
+                background-color: #ff4b4b;
+                color: #fff;
+            }
+        }
+
+        .col {
+            width: 100px;
+
+            &.head {
+                background-color: $light-grey;
+                width: 168px;
+
+
+                .cell {
+                    text-align: right;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                    padding: 10px;
+                }
+            }
+        }
+
+
+
+        .row {
+            flex: 1;
+        }
+    }
+}

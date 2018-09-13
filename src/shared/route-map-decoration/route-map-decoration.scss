@@ -1,0 +1,36 @@
+@import "../../variables";
+
+.route-ball-decoration {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 2;
+    box-sizing: content-box;
+
+    &.plus {
+        border: 2px solid $blue;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-weight: 600;
+        color: $blue
+    }
+
+    &.normal {
+        background-color: $blue;
+    }
+
+    &.grey {
+        background-color: $grey;
+    }
+}
+
+.route-ball-container {
+    width: 45px;
+    height: 100%;
+    border-right: 1px solid $grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
