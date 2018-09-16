@@ -1,10 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
     context: __dirname,
-    entry: './src/index.tsx',
+    entry: {
+        app: ['./src/index.tsx'],
+        vendor: ['react', 'react-dom']
+    },
     output: {
         filename: 'bundle.js',
         path: __dirname + '/dist'
@@ -39,14 +41,13 @@ module.exports = {
         ]
     },
     plugins: [
-        new CopyWebpackPlugin([ { from: path.resolve(__dirname, 'public'), to: path.resolve(__dirname, 'dist/public') } ]),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: path.resolve(__dirname, 'public/index.html'),
         }),
     ],
-    externals: {
-        'react': 'React',
-        'react-dom': 'ReactDOM'
+    devServer: {
+        port: 9000,
+        contentBase: path.join(__dirname, 'dist'),
     }
 };

@@ -1,5 +1,5 @@
 import * as methods from './app.methods';
-import { LineUpdateableTypes, TimetableCellUpdater, UpdateStationType } from './app.classes';
+import { LineUpdateableTypes, UpdateStationType, TimetableCellUpdater } from './app.classes';
 import { EditorTypes } from './app.reducer';
 
 export const AddNewStationAction = () => ({ type: methods.ADD_NEW_STATION });
