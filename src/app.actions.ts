@@ -11,3 +11,5 @@ export const SetCurrentEditableItemAction = (newState: { id: string; type: Edito
 export const UpdateLineAction = (newState: LineUpdateableTypes) => ({ type: methods.UPDATE_LINE, newState });
 
 export const UpdateTimetableCellAction = (newState: TimetableCellUpdater) => ({ type: methods.UPDATE_TIMETABLE_CELL, newState });
+
+export const UpdateCurrentEditableItemByIndexAction = (newState: number) => ({ type: methods.SET_CURRENT_EDITABLE_ITEM_BY_INDEX, newState });

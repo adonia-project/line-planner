@@ -9,6 +9,7 @@ import reducer from './app.reducer';
 import { Sidebar } from './sidebar/sidebar';
 import { Editor } from './editor/editor';
 import { Timetable } from './timetable/timetable';
+import { processKeyboardInput } from './app.keybinds';
 
 const store = createStore(
     reducer,
@@ -19,6 +20,14 @@ const store = createStore(
 export interface AppProps { compiler: string; framework: string; }
 
 export class App extends React.Component<AppProps, {}> {
+    componentDidMount() {
+        window.onkeypress = this.processEditorKeymands;
+    }
+
+    processEditorKeymands = (e: KeyboardEvent) => {
+        processKeyboardInput(e.keyCode, store);
+    };
+
     render() {
         return (
             <Provider store={store}>
