@@ -4,6 +4,8 @@
 
 Line Planner is a simple website that helps you plan our fictional (or real) train lines. This service is primarily used by the [Adonia Project](https://adoniaproject.com), a free and open community for anyone interested in roleplaying companies.
 
+Line Planne is live at [lp.adoniaproject.com](http://lp.adoniaproject.com/)
+
 ## Installation
 ### Prerequisites
 Line Planner requires [**Node.js 8.12.0**](https://nodejs.org/en/download/) or higher
