@@ -20,4 +20,4 @@ Then navigate to [localhost:9000](http://localhost:9000) to play with it
 
 
 ## Contributing
-Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/adonia-project/line-planner/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
