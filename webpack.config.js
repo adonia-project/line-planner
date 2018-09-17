@@ -3,10 +3,7 @@ const path = require('path');
 
 module.exports = {
     context: __dirname,
-    entry: {
-        app: ['./src/index.tsx'],
-        vendor: ['react', 'react-dom']
-    },
+    entry: './src/index.tsx',
     output: {
         filename: 'bundle.js',
         path: __dirname + '/dist'
